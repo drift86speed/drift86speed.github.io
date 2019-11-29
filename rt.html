@@ -48,20 +48,20 @@ body  {
 </head>
 
 <script>
-function NSC() {
-  var x = document.getElementById("aNoShortCut");{
+function NoShortCut() {
+  var x = document.getElementById("NSC");{
     x.style.display = "block";
   }
-    var x = document.getElementById("aShortCut");
+    var x = document.getElementById("SC");
     x.style.display = "none";
   }
 </script>
 <script>
-function SC() {
-  var x = document.getElementById("aShortCut");{
+function ShortCut() {
+  var x = document.getElementById("SC");{
     x.style.display = "block";
   }
-  var x = document.getElementById("aNoShortCut");
+  var x = document.getElementById("NSC");
     x.style.display = "none";
   }
 </script>
@@ -86,8 +86,8 @@ function SC() {
 	
 <div class=center>
 <br> 
-<button class="arial btn" onclick="NSC()">No Shortcuts</button>	
-<button class="arial btn" onclick="SC()">Shortcuts</button>	
+<button class="arial btn" onclick="NoShortCut()">No Shortcuts</button>	
+<button class="arial btn" onclick="ShortCut()">Shortcuts</button>	
 </div>	  
     
 <br>  
