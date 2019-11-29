@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang=en-US>
+<head>
+<title> Drift86Speed </title>
+<style> 
+.column {
+    float: left;
+    width: 50%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#headerPopup{
+  width:75%;
+  margin:0 auto;
+}
+#headerPopup iframe{
+  width:100%;
+  margin:0 auto;
+}
+.parallax { 
+  /* The image used */
+  background-image: url("bgindex.png");
+  /* Set a specific height */
+  height: 1080px; 
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1 {
+      color: white;
+}
+h2 {
+      color: white;
+}
+a {
+      color: white;
+}
+p {
+      color: white;
+}
+table {
+  border-collapse: collapse;
+}
+table, th, td {
+  border: 1px solid black;
+}
+body  {
+  background-image: url("bgindex.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+</style>
+
+<link rel="stylesheet" href="index.css">
+<link rel="icon" type="image/vnd.microsoft.icon"
+     href="favicon.ico" />
+<link rel="stylesheet" href="index.css">
+  
+<div class=center>
+<h1>Welcome to Drift86Speed</h1>
+
+<h2>This page was made to store the Drift86 track time leaderboards</h2>
+
+<div class=center>
+<button id="myButton" class="arial btn" >Race Time Boards</button>
+<button id="myButton1" class="arial btn" >Submit Time</button>
+<button id="myButton2" class="arial btn" >Discord Link</button>
+</div>
+<script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "boards.html";
+    };
+       document.getElementById("myButton1").onclick = function () {
+        location.href = "submit.html";
+    };
+       document.getElementById("myButton2").onclick = function () {
+        location.href = "https://discord.gg/JbdKKsX";
+    };
+</script>
+</body>
+</html>
