@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang=en-US>
+<head>
+<title> Drift86Speed | Forest </title>
+<style> 
+.column {
+    float: left;
+    width: 33.33%;
+}
+	.column2 {
+	float:left;
+	width: 50%;
+}
+	
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+h1 {
+  color: white;
+}
+h2 {
+  color: white;
+}
+a {
+  color: blue;
+}
+p {
+  color: white;
+}
+table {
+  border-collapse: collapse;
+}
+table, th, td {
+  border: 1px solid black;
+}
+body  {
+  background-image: url("bgindex.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+</style>
+	
+<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico" > </link>
+<link rel="stylesheet" href="index.css"> </link>
+
+</head>
+
+<script>
+function NoShortCut() {
+  var x = document.getElementById("NSC");{
+    x.style.display = "block";
+  }
+    var x = document.getElementById("SC");
+    x.style.display = "none";
+  }
+</script>
+<script>
+function ShortCut() {
+  var x = document.getElementById("SC");{
+    x.style.display = "block";
+  }
+  var x = document.getElementById("NSC");
+    x.style.display = "none";
+  }
+</script>
+
+<div class=center>
+<h1> Forest </h1>	
+</div>
+	
+<div class=center>
+<button id="myButton1" class="arial btn" >Back</button>
+<button id="myButton2" class="arial btn" >Submit run</button>
+</div>
+
+<script type="text/javascript">
+    document.getElementById("myButton1").onclick = function () {
+        location.href = "tracks.html";
+    };
+    document.getElementById("myButton2").onclick = function () {
+        location.href = "submit.html";
+    };
+</script>
+	
+<div class=center>
+<br> 
+<button class="arial btn" onclick="NoShortCut()">No Shortcuts</button>	
+<button class="arial btn" onclick="ShortCut()">Shortcuts</button>	
+</div>	  
+    
+<br>  
+<div  id="NSC">
+<table align="center" width="300">
+<thead>
+<tr>
+    <th colspan="4">No Shortcuts</th>
+</tr>
+<tr>
+    <th>#</th>
+    <th>Runner</th>
+    <th>Car</th>
+    <th>Time</th>
+</tr>
+</thead>
+<tbody>
+<tr onclick="window.location='/run/.html';">
+    <td>1st</td>
+    <td class="bold"><a class="run-link" href="" target="_blank"></a></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr onclick="window.location='/run/.html';">
+    <td>2nd</td>
+    <td class="bold"><a class="run-link" href="" target="_blank"></a></td>
+    <td></td>
+    <td></td>
+</tr>
+</tbody>
+</table>    
+</div> 
+	 
+<div  id="SC" style="display:none">
+<table align="center" width="300">
+<thead>
+<tr>
+    <th colspan="4">Shortcuts</th>
+</tr>
+<tr>
+    <th>#</th>
+    <th>Runner</th>
+    <th>Car</th>
+    <th>Time</th>
+</tr>
+</thead>
+<tbody>
+<tr onclick="window.location='/run/.html';">
+    <td>1st</td>
+    <td class="bold"><a class="run-link" href="" target="_blank"></a></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr onclick="window.location='/run/.html';">
+    <td>2nd</td>
+    <td class="bold"><a class="run-link" href="" target="_blank"></a></td>
+    <td></td>
+    <td></td>
+</tr>
+</tbody>
+</table>    
+</div> 
+
+</body>
+</html>
