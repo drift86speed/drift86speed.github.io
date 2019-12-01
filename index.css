@@ -1,27 +1,27 @@
-h1 {
-	font-family:Verdana;
+ @font-face {
+   font-family: drift;
+   src: url(oceanicdriftbold.woff);
+}
+
+* {
+   font-family: drift;
+}h1 {
+	font-family:drift;
 	text-align: center;
 	font-size: 72px;
 }
+h2 {	
+	font-family:drift;
+	font-size:40px;
+}
 p {
-	font-family:Arial;
+	font-family:drift;
 	text-align: center;
 	font-size:25px;
 }
 a {
-      text-decoration:none;
-}
-.arial {
-	font-family:Arial;
-}
-.verdana {
-	font-family:Verdana;
-}
-.georgia {
-	font-family:Georgia;
-}
-.timesnewroman {
-	font-family:Times New Roman;
+	font-family:drift;
+	text-decoration:none;
 }
 .center {
 	text-align:center;
@@ -43,12 +43,6 @@ a {
 	background: #ffffff;
 	color:black;
 }
-.courier {
-	font-family: Courier;
-}
-.couriernew {
-	font-family: Courier New;
-}
 .fontgreen {
 	color: #00FF00;
 }
@@ -56,10 +50,6 @@ a {
 	float:right;
 	position:relative;
 	left:50%;
-}
-h2 {	
-	font-family:Verdana;
-	font-size:40px;
 }
 .margin {
 	width:900px;
