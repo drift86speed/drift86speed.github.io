@@ -41,6 +41,16 @@ body  {
   background-repeat: repeat-y;
   background-attachment: fixed;
 }
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 1px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 </style>
 	
 <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico" > </link>
@@ -93,7 +103,8 @@ function ShortCut() {
 </div>	  -->
    
 <br>  
-<div  id="NSC">
+<div class="row">
+<div  id="NSC" class="column"> 
 <table align="center">
 <thead>
 <tr>
@@ -133,12 +144,12 @@ function ShortCut() {
 </tr>
 </tbody>
 </table>    
+</div>     
 </div> 
 	
-<br>
-	
-<div  id="SC">
-<table align="right">
+<div class="row">
+<div  id="SC" class="column"> 
+<table align="center">
 <thead>
 <tr>
     <th colspan="4">Drift Points</th>
