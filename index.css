@@ -9,10 +9,12 @@
 	font-family:drift;
 	text-align: center;
 	font-size: 72px;
+  font-style: italic;
 }
 h2 {	
 	font-family:drift;
 	font-size:40px;
+  font-style: italic;
 }
 p {
 	font-family:drift;
