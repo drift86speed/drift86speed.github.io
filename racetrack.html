@@ -67,25 +67,25 @@ table { border: 1px solid black;
 <link rel="stylesheet" href="index.css"> </link>
 
 </head>
-<!--
+
 <script>
-function NoShortCut() {
-  var x = document.getElementById("NSC");{
+function timetrial() {
+  var x = document.getElementById("time");{
     x.style.display = "block";
   }
-    var x = document.getElementById("SC");
+    var x = document.getElementById("dp");
     x.style.display = "none";
   }
 </script>
 <script>
-function ShortCut() {
-  var x = document.getElementById("SC");{
+function drifting() {
+  var x = document.getElementById("dp");{
     x.style.display = "block";
   }
-  var x = document.getElementById("NSC");
+  var x = document.getElementById("time");
     x.style.display = "none";
   }
-</script> -->
+</script>
 
 <div class=center>
 <h1> RaceTrack </h1>	
@@ -105,19 +105,52 @@ function ShortCut() {
     };
 </script>
 
-<!--
+
 <br> 
-<button class="arial btn" onclick="NoShortCut()">No Shortcuts</button>	
-<button class="arial btn" onclick="ShortCut()">Shortcuts</button>	
-</div>	  -->
-   
-<br>  
+<button class="arial btn" onclick="timetrial()">Time Trials</button>	
+<button class="arial btn" onclick="drifting()">Drift Points</button>	
+</div>
+
 <div class=center>
-<div  id="NSC" style="float: center"> 
+<div  id="time" style="float: center"> 
 <table align="center">
 <thead>
 <tr>
-    <th colspan="4">Time Trial</th>
+    <th colspan="4">Time Trial - Any%</th>
+</tr>
+<tr>
+    <th>#</th>
+    <th>Runner</th>
+    <th>Car</th>
+    <th>Time</th>
+</tr>
+</thead>
+<tbody>
+<tr onclick="window.location='';">
+    <td>1st</td>
+    <td class="bold"></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr onclick="window.location='';">
+    <td>2nd</td>
+    <td class="bold"></td>
+    <td></td>
+    <td></td>
+</tr>
+</tbody>
+</table>    
+</div>     
+</div> 
+
+<br> 
+
+<div class=center>
+<div  id="time" style="float: center"> 
+<table align="center">
+<thead>
+<tr>
+    <th colspan="4">Time Trial - Any% No Resets</th>
 </tr>
 <tr>
     <th>#</th>
@@ -173,11 +206,77 @@ function ShortCut() {
 </table>    
 </div>     
 </div> 
-	
+
+<br>
+
+<div  id="time" style="float: center"> 
+<table align="center">
+<thead>
+<tr>
+    <th colspan="4">Time Trial - No Shortcuts</th>
+</tr>
+<tr>
+    <th>#</th>
+    <th>Runner</th>
+    <th>Car</th>
+    <th>Time</th>
+</tr>
+</thead>
+<tbody>
+<tr onclick="window.location='';">
+    <td>1st</td>
+    <td class="bold"></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr onclick="window.location='';">
+    <td>2nd</td>
+    <td class="bold"></td>
+    <td></td>
+    <td></td>
+</tr>
+</tbody>
+</table>    
+</div>     
+</div> 
+
+<br>  
+
+<div  id="time" style="float: center"> 
+<table align="center">
+<thead>
+<tr>
+    <th colspan="4">Time Trial - No Shortcuts or Resets</th>
+</tr>
+<tr>
+    <th>#</th>
+    <th>Runner</th>
+    <th>Car</th>
+    <th>Time</th>
+</tr>
+</thead>
+<tbody>
+<tr onclick="window.location='https://youtu.be/kUwiXJD8Dvs';">
+    <td>1st</td>
+    <td class="bold">Salsa</td>
+    <td>SunLine GTE</td>
+    <td>2:53:09</td>
+</tr>
+<tr onclick="window.location='https://www.youtube.com/watch?v=lEOkeAaaGLM';">
+    <td>2nd</td>
+    <td class="bold">SioN</td>
+    <td>SunLine GTE</td>
+    <td>2:55:25</td>
+</tr>
+</tbody>
+</table>    
+</div>     
+</div> 
+
 <br>
 
 <div class=center>
-<div  id="SC" style="float: center"> 
+<div  id="dp" style="float: center" style="display:none"> 
 <table align="center">
 <thead>
 <tr>
