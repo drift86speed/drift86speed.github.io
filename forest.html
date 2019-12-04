@@ -11,8 +11,6 @@
 	float:left;
 	width: 50%;
 }
-	
-/* Clear floats after the columns */
 .row:after {
     content: "";
     display: table;
@@ -41,65 +39,108 @@ body  {
   background-repeat: repeat-y;
   background-attachment: fixed;
 }
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 1px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+table { border: 1px solid black; 
+}
 </style>
 	
 <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico" > </link>
 <link rel="stylesheet" href="index.css"> </link>
 
+    
 </head>
 
-<script>
-function NoShortCut() {
-  var x = document.getElementById("NSC");{
-    x.style.display = "block";
-  }
-    var x = document.getElementById("SC");
-    x.style.display = "none";
-  }
-</script>
-<script>
-function ShortCut() {
-  var x = document.getElementById("SC");{
-    x.style.display = "block";
-  }
-  var x = document.getElementById("NSC");
-    x.style.display = "none";
-  }
-</script>
+
+<h1> Forest </h1>
+
 
 <div class=center>
-<h1> Forest </h1>	
+<button id="myButton" class="arial btn" >Back</button>
+<button id="myButton1" class="arial btn" >Submit</button>
 </div>
-	
-<div class=center>
-
-<button id="myButton1" class="arial btn" >Back</button>
-<button id="myButton2" class="arial btn" >Submit run</button>
-</div> 
-
 <script type="text/javascript">
-    document.getElementById("myButton1").onclick = function () {
+    document.getElementById("myButton").onclick = function () {
         location.href = "tracks";
     };
-    document.getElementById("myButton2").onclick = function () {
-        location.href = "submit";
+    document.getElementById("myButton1").onclick = function () {
+        location.href = "submit.html";
     };
 </script>
-	
-<div class=center>
-<!--<br> 
-<button class="arial btn" onclick="NoShortCut()">No Shortcuts</button>	
-<button class="arial btn" onclick="ShortCut()">Shortcuts</button>	
-</div>	-->  
     
-<br>  
+<script>
+function trial() {
+  var x = document.getElementById("times");{
+    x.style.display = "block";
+  }
+    var x = document.getElementById("points");
+    x.style.display = "none";
+  }
+</script>
+
+<script>
+function drift() {
+  var x = document.getElementById("points");{
+    x.style.display = "block";
+  }
+    var x = document.getElementById("times");
+    x.style.display = "none";
+  }
+</script>    
+   
+<br>	
 <div class=center>
-<div  id="NSC" style="float: center"> 
-<table align="center">
+	
+<button class="arial btn" onclick="trial()">Time Trials</button>
+<button class="arial btn" onclick="drift()">Drift Points</button>	
+</div>	
+	
+<br>
+    
+<div id="times">
+<table align="center" width="500">
 <thead>
-    <th colspan="4">Time Trial</th>
+
+    <th colspan="4">Time Trial - Any%</th>
 </tr>
+<tr>
+    <th>#</th>
+    <th>Runner</th>
+    <th>Car</th>
+    <th>Time</th>
+</tr>
+</thead>
+<tbody>
+<tr onclick="window.location='';">
+    <td>1st</td>
+    <td class="bold"></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr onclick="window.location='';">
+    <td>2nd</td>
+    <td class="bold"></td>
+    <td></td>
+    <td></td>
+</tr>
+</tbody>
+</table>   
+
+<br>  
+    
+<table align="center" width="500">
 <thead>
+<tr>
+    <th colspan="4">Time Trial - Any% No Resets</th>
+</tr>
 <tr>
     <th>#</th>
     <th>Runner</th>
@@ -114,27 +155,78 @@ function ShortCut() {
     <td>SunLine GTE</td>
     <td>3:11:57</td>
 </tr>
-<tr onclick="window.location='https://www.youtube.com/watch?v=B6VVhfS6etM';">
+<tr onclick="window.location='';">
     <td>2nd</td>
+    <td class="bold"></td>
+    <td></td>
+    <td></td>
+</tr>
+</tbody>
+</table>  
+
+<br>  
+    
+<table align="center" width="500">
+<thead>
+<tr>
+    <th colspan="4">Time Trial - No Shortcuts</th>
+</tr>
+<tr>
+    <th>#</th>
+    <th>Runner</th>
+    <th>Car</th>
+    <th>Time</th>
+</tr>
+</thead>
+<tbody>
+<tr onclick="window.location='';">
+    <td>1st</td>
+    <td class="bold"></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr onclick="window.location='';">
+    <td>2nd</td>
+    <td class="bold"></td>
+    <td></td>
+    <td></td>
+</tr>
+</tbody>
+</table>    
+
+<br>  
+
+<table align="center" width="500">
+<thead>
+<tr>
+    <th colspan="4">Time Trial - No Shortcuts or Resets</th>
+</tr>
+<tr>
+    <th>#</th>
+    <th>Runner</th>
+    <th>Car</th>
+    <th>Time</th>
+</tr>
+</thead>
+<tbody>
+<tr onclick="window.location='https://www.youtube.com/watch?v=B6VVhfS6etM';">
+    <td>1st</td>
     <td class="bold">SioN</td>
     <td>SuprX</td>
     <td>3:39:36</td>
 </tr>
 <tr onclick="window.location='https://www.youtube.com/watch?v=MipqNLDwOoE';">
-    <td>3rd</td>
+    <td>2nd</td>
     <td class="bold">SRMoe</td>
     <td>EG86</td>
     <td>3:45:75</td>
 </tr>
 </tbody>
 </table>    
-</div> 
+</div>  
 
-<br>	
-	
-<div class=center>
-<div  id="SC" style="float: center"> 
-<table align="center">
+<div id="points" style="display:none">
+<table align="center" width="435">
 <thead>
 <tr>
     <th colspan="4">Drift Points</th>
@@ -160,10 +252,12 @@ function ShortCut() {
     <td></td>
 </tr>
 </tbody>
-</table>    
-</div>      
-</div> 
+</table>  
+</div>   
 
-
+<br>  
+<br> 
+<br>  
+    
 </body>
 </html>
