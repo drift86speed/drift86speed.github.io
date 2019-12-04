@@ -7,11 +7,26 @@
     float: left;
     width: 33.33%;
 }
-/* Clear floats after the columns */
+	.column2 {
+	float:left;
+	width: 50%;
+}
 .row:after {
     content: "";
     display: table;
     clear: both;
+}
+h1 {
+  color: white;
+}
+h2 {
+  color: white;
+}
+a {
+  color: blue;
+}
+p {
+  color: white;
 }
 table {
   border-collapse: collapse;
@@ -21,8 +36,20 @@ table, th, td {
 }
 body  {
   background-image: url("bgindex.png");
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-attachment: fixed;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 1px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+table { border: 1px solid black; 
 }
 </style>
 	
