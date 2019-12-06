@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang=en-US>
+<head>
+<title> Drift86Speed | Island </title>
+<style> 
+.column {
+    float: left;
+    width: 33.33%;
+}
+	.column2 {
+	float:left;
+	width: 50%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+h1 {
+  color: white;
+}
+h2 {
+  color: white;
+}
+a {
+  color: blue;
+}
+p {
+  color: white;
+}
+table {
+  border-collapse: collapse;
+}
+table, th, td {
+  border: 1px solid black;
+}
+body  {
+  background-image: url("bgindex.png");
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 1px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+table { border: 1px solid black; 
+}
+</style>
+	
+<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico" > </link>
+<link rel="stylesheet" href="index.css"> </link>
+
+    
+</head>
+
+
+<h1> Island </h1>
+
+
+<div class=center>
+<button id="myButton" class="arial btn" >Back</button>
+<button id="myButton1" class="arial btn" >Submit</button>
+</div>
+<script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "tracks";
+    };
+    document.getElementById("myButton1").onclick = function () {
+        location.href = "submit.html";
+    };
+</script>
+    
+<script>
+function trial() {
+  var x = document.getElementById("times");{
+    x.style.display = "block";
+  }
+    var x = document.getElementById("points");
+    x.style.display = "none";
+  }
+</script>
+
+<script>
+function drift() {
+  var x = document.getElementById("points");{
+    x.style.display = "block";
+  }
+    var x = document.getElementById("times");
+    x.style.display = "none";
+  }
+</script>    
+   
+<br>	
+<div class=center>
+	
+<button class="arial btn" onclick="trial()">Time Trials</button>
+<button class="arial btn" onclick="drift()">Drift Points</button>	
+</div>	
+	
+<br>
+    
+<div id="times">
+<table align="center" width="500">
+<thead>
+
+    <th colspan="4">Time Trial - Any%</th>
+</tr>
+<tr>
+    <th>#</th>
+    <th>Runner</th>
+    <th>Car</th>
+    <th>Time</th>
+</tr>
+</thead>
+<tbody>
+<tr onclick="window.location='';">
+    <td>1st</td>
+    <td class="bold"></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr onclick="window.location='';">
+    <td>2nd</td>
+    <td class="bold"></td>
+    <td></td>
+    <td></td>
+</tr>
+</tbody>
+</table>   
+
+<br>  
+    
+<table align="center" width="500">
+<thead>
+<tr>
+    <th colspan="4">Time Trial - Any% No Resets</th>
+</tr>
+<tr>
+    <th>#</th>
+    <th>Runner</th>
+    <th>Car</th>
+    <th>Time</th>
+</tr>
+</thead>
+<tbody>
+<tr onclick="window.location='';">
+    <td>1st</td>
+    <td class="bold"></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr onclick="window.location='';">
+    <td>2nd</td>
+    <td class="bold"></td>
+    <td></td>
+    <td></td>
+</tr>
+</tbody>
+</table>  
+
+<br>  
+    
+<table align="center" width="500">
+<thead>
+<tr>
+    <th colspan="4">Time Trial - No Shortcuts</th>
+</tr>
+<tr>
+    <th>#</th>
+    <th>Runner</th>
+    <th>Car</th>
+    <th>Time</th>
+</tr>
+</thead>
+<tbody>
+<tr onclick="window.location='';">
+    <td>1st</td>
+    <td class="bold"></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr onclick="window.location='';">
+    <td>2nd</td>
+    <td class="bold"></td>
+    <td></td>
+    <td></td>
+</tr>
+</tbody>
+</table>    
+
+<br>  
+
+<table align="center" width="500">
+<thead>
+<tr>
+    <th colspan="4">Time Trial - No Shortcuts or Resets</th>
+</tr>
+<tr>
+    <th>#</th>
+    <th>Runner</th>
+    <th>Car</th>
+    <th>Time</th>
+</tr>
+</thead>
+<tbody>
+<tr onclick="window.location='https://www.youtube.com/watch?v=iAb4FxkKj8A';">
+    <td>1st</td>
+    <td class="bold">Frenchboi</td>
+    <td>SunLine GTE</td>
+    <td>2:47:86</td>
+</tr>
+<tr onclick="window.location='https://www.youtube.com/watch?v=gvz0okayISQ';">
+    <td>2nd</td>
+    <td class="bold">paulen</td>
+    <td>SunLine GTE</td>
+    <td>2:48:47</td>
+</tr>
+<tr onclick="window.location='https://www.youtube.com/watch?v=vnYjLzweerM';">
+    <td>3rd</td>
+    <td class="bold">DRTron</td>
+    <td>SunLine GTE</td>
+    <td>2:49:44</td>
+</tr>
+<tr onclick="window.location='https://www.youtube.com/watch?v=GSkvUs4yam0';">
+    <td>4th</td>
+    <td class="bold">SRMoe</td>
+    <td>XR-7</td>
+    <td>2:58:09</td>
+</tr>
+<tr onclick="window.location='https://www.youtube.com/watch?v=UqkOJk_P6ME';">
+    <td>5th</td>
+    <td class="bold">SioN</td>
+    <td>SuprX</td>
+    <td>3:07:90</td>
+</tr>
+</tbody>
+</table>    
+</div>  
+
+<div id="points" style="display:none">
+<table align="center" width="500">
+<thead>
+<tr>
+    <th colspan="4">Drift Points</th>
+</tr>
+<tr>
+    <th>#</th>
+    <th>Runner</th>
+    <th>Car</th>
+    <th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr onclick="window.location='https://www.youtube.com/watch?v=UqkOJk_P6ME';">
+    <td>1st</td>
+    <td class="bold">SioN</td>
+    <td>SuprX</td>
+    <td>57561</td>
+</tr>
+<tr onclick="window.location='/run/.html';">
+    <td>2nd</td>
+    <td class="bold"><a class="run-link" href="" target="_blank"></a></td>
+    <td></td>
+    <td></td>
+</tr>
+</tbody>
+</table>  
+</div>   
+
+	<br>
+	
+	
+<table align="center" width="500">
+<thead>
+<tr>
+    <th colspan="4">Drift Points - Multiplayer</th>
+</tr>
+<tr>
+    <th>#</th>
+    <th>Runner</th>
+    <th>Car</th>
+    <th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr onclick="window.location='';">
+    <td>1st</td>
+    <td class="bold"></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr onclick="window.location='';">
+    <td>2nd</td>
+    <td class="bold"></td>
+    <td></td>
+    <td></td>
+</tr>
+</tbody>
+</table>  	
+
+<br>  
+<br> 
+<br>  
+    
+</body>
+</html>
