@@ -168,7 +168,7 @@ td {
 }
 
 tr:hover td {
-    background-color: grey;
+    background-color: #ff5757;
 }
 
 .run-link {
